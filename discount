@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int qty,amt,value;
+    float dis,ta;
+    cout<<"enter the quantity of item =";
+    cin>>qty;
+    cout<<"enter the value of per item =";
+    cin>>value;
+
+    amt=qty*value;
+
+    cout<<"your amount is "<<amt;
+
+    if (amt>1000)
+    {
+       cout<<"\n you got 10 percent discount  ";
+       dis=amt*0.1;
+       ta= amt-dis;
+       cout<<"\n your total amount is "<<ta;
+    }
+
+    else
+    cout<<"\n you do not get any discount";
+   return 0;
+}
